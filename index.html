@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wenz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="reset.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#home">
+                <img src="./images/oceana-logo_white.svg" alt="oceana wenz portfolio" class="main-logo"/>
+            </a>
+        </div>
+        <div class="nav-outer-box">
+            <div class="nav-links"> 
+                <a href="#about">About Me</a>
+                <div class="nav-underline"></div>
+            </div>
+            <div class="nav-links"> 
+                <a href="#projects">Projects</a>
+                <div class="nav-underline"></div>
+            </div>
+            <div class="nav-links"> 
+                <a href="#contact">Contact Me</a>
+                <div class="nav-underline"></div>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/oceana-wenz/" target="_blank"><img src="./images/icon_linkedin.png"/></a>
+            <a href="https://github.com/oceanawenz" target="_blank"><img src="./images/icon_github.png"/></a>
+        </div>
+    </header>
+    <div class="hero-section" id="home">
+        <div class="heroImg-box">
+            <img src="./images/hero-img.png" class="heroImg"/>
+        </div>
+        <div class="chat-box">
+            <div class="chat-bubble fadein-1"><h1>Hello</h1><div class="chat-mark"><img src="./images/chat-mark.png"></div></div>
+            <div class="chat-bubble fadein-2"><h1>My Name is Oceana</h1><div class="chat-mark"><img src="./images/chat-mark.png"></div></div>
+            <!-- <h1 class="chat-bubble right-fade-in">And</h1> -->
+            <div class="chat-bubble fadein-3"><h1>I'm a Full Stack Web Developer</h1><div class="chat-mark"><img src="./images/chat-mark.png"></div></div>
+        </div>
+    </div>
+    <section id="about" class="about-section" >   
+            <h1 style="font-size:40px"  class="about-header">About Me</h1>
+            <div class="about-container">
+                <div class="about-info">
+                    <img src="./images/travel-img.jpg"class="about-img"/>
+                    <p>
+                        Believe it or not, I do not come from a coding background. Previously, I had my hands dipped in social media marketing. From
+                        photography and videography, to handling social media accounts, I was able to learn how to turn followers into customers. 
+                    </p>
+                    <p>            
+                        Recently, I enrolled
+                        into a Full Stack Web Development course at DevMountain. While there, I spent time with a small virtual team working to build web applications. 
+                        This involved learning back-end technologies like NodeJs, Express, and PostgreSQL, and front-end tech which included ReactJs, JavaScript, and Redux. 
+                        I am currently seeking a role in front-end web development. Let's get in contact! 
+                    </p>
+                </div>
+                <div class="icon-container">
+                        <h1 class="language-header">Tools & Technologies</h1>
+                        <div class="icon-box" >
+                            <div>
+                                <img src="./images/icons/skills_css3.jpg" class="skill-icon" />
+                                <p class="skill-title">CSS3</p>  
+                            </div>
+                            <div>
+                                <img src="./images/icons/skills_html5.jpg" class="skill-icon"/>
+                                <p class="skill-title">HTML5</p>  
+                            </div>
+                            <div>
+                                <img src="./images/icons/skills_githib.jpg" class="skill-icon"/>
+                                <p class="skill-title">GitHub</p>  
+                            </div>
+                            <div>
+                                <img src="./images/icons/skills_git.jpg" class="skill-icon"/>
+                                <p class="skill-title">Git</p>  
+                            </div>
+                            <div>
+                                <img src="./images/icons/skills_javascript.jpg" class="skill-icon"/>
+                                <p class="skill-title">JavaScript</p>  
+                            </div>
+                            <div>
+                                <img src="./images/icons/skills_nodejs.jpg" class="skill-icon"/>
+                                <p class="skill-title">NodeJs</p>  
+                            </div>
+                           <div>
+                                <img src="./images/icons/skills_postreSQL.jpg" class="skill-icon"/>
+                                <p class="skill-title">PostreSql</p>  
+                           </div>
+                           <div>
+                                <img src="./images/icons/skills_react.jpg"  class="skill-icon"/>
+                                <p class="skill-title">REACT</p>  
+                           </div>
+                           <div>
+                                <img src="./images/icons/skills_redux.jpg" class="skill-icon"/>
+                                <p class="skill-title">REDUX</p>  
+                           </div>
+                          
+                        </div> 
+                </div>  
+            </div>
+                  
+    </section>
+    <section id="projects" class="project-section">
+            <h1 style="font-size:40px" class="project-header">Projects</h1>
+        <div class="project-items">
+            
+            <div class="image-box">
+                <a href="./project-swollr.html">
+                    <img src="/images/swollr.jpg" class="project-img1"/>
+                    <div class="img-description-layer">
+                        <p class="img-description">Swollr. A custom workout application.</p>
+                    </div>    
+                </a>
+            </div>
+            <div class="image-box">
+                <a href="./project-fortnite.html"> 
+                    <img src="/images/fortnite.jpg" class="project-img2" />
+                     <div class="img-description-layer">
+                        <p class="img-description">Fortnite Item Shop. A small NoDB project implementing a backend server using NodeJs.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="image-box">
+                <a href="./project-fortnite.html"> 
+                    <img src="./images/dev-fountain-home.jpg" class="project-img3"/>
+                    <div class="img-description-layer">
+                        <p>DevFountain. A Team Project</p>
+                    </div>
+                </a> 
+            </div>
+     
+        </div>
+    </section>
+    <section class="contact-section">
+        <div class="contact-header">
+            <h1>CONTACT</h1>
+        </div>
+        <form id="contact" action="email.php" method="POST" name="contact_form" class="form">
+            <input class="text-field" type="text" maxlength="25" name="first_name" placeholder="What Do I Call You?"required/>
+            <input class="text-field" type="text" maxlength="64" name="" placeholder="What Is Your Email?" name="email" required/>
+            <textarea  class="text-field" maxlength="500" comments="message"  placeholder="Enter Message" required></textarea>
+            <input type="submit" value="SEND" class="send-button"/>  
+        </form>
+
+    </section>
+    <footer class="footer">
+        <img src="./images/oceana-logo_white.svg" alt="oceana wenz portfolio" class="footer-logo"/>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+        </div>
+        <p>
+            Made with <span><img src="./images/heart-sketch.png"/></span> 
+            by Oceana Wenz
+        </p>
+    </footer>
+   
+</body>
+</html>

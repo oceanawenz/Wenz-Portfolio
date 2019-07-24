@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0px;
+  color: #00212f;
+  /* background-color: plum; */
+  font-family: 'Montserrat', sans-serif;
+}
+
+body, a, h1, h2, h3, h4, h5, p, input, label, button {
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+.header {
+    background-color: transparent;
+    /* margin-top: 10px; */
+    height: 100px;
+    padding: 0 20px;
+    color: white;
+    display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: center;
+      align-content: center;
+      background-color: #33C6B8;
+  }
+  
+  .nav-outer-box {
+    height: 30px;
+    padding-top: 10px;
+  }
+  
+  .nav-outer-box a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+  }
+  
+  .nav-links {
+      display: inline-block;
+  }
+  
+  .nav-links:hover .nav-underline{
+      width: 100%;
+      transition: all .2s ease-out;
+  }
+  
+  .nav-underline {
+      height: 2px;
+      width: 0;
+      margin: 6px auto 0 auto;
+      background-color: white;
+      transition: all .2s ease-out;
+  }
+
+
+.social-links img {
+    height: 28px;
+    padding: 10px;
+  }
+
+.main-logo {
+    height: 30px;
+}
+
+.project-container {
+    padding-top: 100px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: papayawhip;
+}
+
+.project-sidebar {
+    display: inline-block;
+    width: 300px;
+    height: 50vh;
+    background-color: lightblue;
+}
+
+.project-sidebar p {
+    display: block;
+}
